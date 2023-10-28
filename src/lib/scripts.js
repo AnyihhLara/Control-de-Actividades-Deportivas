@@ -11,11 +11,17 @@ export class Controller {
         this.sportsActivities = [];
     }
     addActivity(name, date, participants) {
+        name = name.trim();
+        name = name.charAt(0).toUpperCase() + name.slice(1);
         let activity = this.sportsActivities.find(act => act.name === name);
 
         if(!activity){
-            name = name.charAt(0).toUpperCase() + name.slice(1);
-            this.sportsActivities.push(new SportActivity(name, date, participants));
+            if(name !== ""){
+                this.sportsActivities.push(new SportActivity(name, date, participants));
+            }
+            else{
+                throw new Error("El campo de nombre es obligatorio.")
+            }
         }
         else {
             throw new Error("Ya existe una actividad con ese nombre.");

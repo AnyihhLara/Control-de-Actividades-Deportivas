@@ -2,13 +2,16 @@
 	import Table from '$lib/components/Table/Table.svelte';
 	import { Controller } from '$lib/scripts';
 	import AddModal from '$lib/components/Modal/AddModal.svelte';
-	import TableWrapper from '../lib/components/Table/TableWrapper.svelte';
-	import AddModalButton from '../lib/components/AddModalButton.svelte';
+	import TableWrapper from '$lib/components/Table/TableWrapper.svelte';
+	import AddModalButton from '$lib/components/Modal/AddModalButton.svelte';
 	import DeleteModal from '$lib/components/Modal/DeleteModal.svelte';
 	import ErrorModal from '$lib/components/Modal/ErrorModal.svelte';
 	import ModifyModal from '$lib/components/Modal/ModifyModal.svelte';
 
 	const controller = new Controller();
+	controller.addActivity("Fútbol", "2023-10-29", 20);
+	controller.addActivity("Dominó", "2023-11-01", 20);
+	controller.addActivity("Tenis", "2023-11-05", 11);
 
 	let name;
 	let date;
