@@ -34,6 +34,6 @@
 			/>
 		</InputWrapper>
 
-		<Button type="submit" class="w-full1" color="green">Modificar</Button>
+		<Button type="submit" class="w-full1" color="primary">Modificar</Button>
 	</form>
 </Modal>

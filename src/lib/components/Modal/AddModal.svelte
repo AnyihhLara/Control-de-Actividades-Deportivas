@@ -39,6 +39,6 @@
 			/>
 		</InputWrapper>
 
-		<Button type="submit" class="w-full1" color="green">Agregar</Button>
+		<Button type="submit" class="w-full1" color="primary">Agregar</Button>
 	</form>
 </Modal>

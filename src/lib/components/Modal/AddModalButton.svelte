@@ -3,6 +3,6 @@
 	import { Button } from 'flowbite-svelte';
 </script>
 
-<Button pill={true} class="!p-2" color="green" on:click>
-	<PlusSolid class="w-4 h-4" />
+<Button on:click color="alternative">
+	<PlusSolid class="w-3 h-3 mr-3" /> Agregar
 </Button>
