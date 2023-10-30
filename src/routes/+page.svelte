@@ -10,8 +10,13 @@
 
 	const controller = new Controller();
 	controller.addActivity("Fútbol", "2023-10-29", 20);
-	controller.addActivity("Dominó", "2023-11-01", 20);
-	controller.addActivity("Tenis", "2023-11-05", 11);
+	controller.addActivity("Dominó", "2023-11-01", 15);
+	controller.addActivity("Tenis", "2023-11-05", 10);
+	controller.addActivity("Volleyball", "2023-10-29", 20);
+	controller.addActivity("Ajedrez", "2023-11-01", 8);
+	controller.addActivity("Gimnasia", "2023-11-05", 11);
+	controller.addActivity("Natación", "2023-10-29", 18);
+	controller.addActivity("Basketball", "2023-11-01", 20);
 
 	let name;
 	let date;

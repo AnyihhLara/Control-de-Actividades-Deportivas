@@ -12,7 +12,7 @@
 		<TableHeadCell>Nombre</TableHeadCell>
 		<TableHeadCell>Fecha</TableHeadCell>
 		<TableHeadCell>Participantes</TableHeadCell>
-		<TableHeadCell>Acciones</TableHeadCell>
+		<TableHeadCell />
 		<TableHeadCell />
 	</TableHead>
 	<TableBody>
