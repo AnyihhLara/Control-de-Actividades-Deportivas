@@ -1,11 +1,12 @@
 <script>
 	import { Button, Modal, Input, NumberInput } from 'flowbite-svelte';
 	import InputWrapper from '../InputWrapper.svelte';
+
 	export let showAddModal;
 	export let name;
 	export let date;
 	export let participants;
-	
+
 	function nonnegativeparticipants() {
 		if (participants < 0) {
 			participants = 0;
@@ -39,6 +40,6 @@
 			/>
 		</InputWrapper>
 
-		<Button type="submit" class="w-full1" color="primary">Agregar</Button>
+		<Button type="submit" class="w-full" color="primary">Agregar</Button>
 	</form>
 </Modal>

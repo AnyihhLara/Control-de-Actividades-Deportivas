@@ -7,11 +7,9 @@
 	<TableBodyCell><slot name="activity-date" /></TableBodyCell>
 	<TableBodyCell><slot name="activity-participants" /></TableBodyCell>
 	<TableBodyCell>
-		<slot name="edit-a"/>
+		<slot name="edit-a" />
 	</TableBodyCell>
 	<TableBodyCell>
-		<slot name="delete-a"/>
+		<slot name="delete-a" />
 	</TableBodyCell>
 </TableBodyRow>
-
-
