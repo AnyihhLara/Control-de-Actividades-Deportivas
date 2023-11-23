@@ -12,7 +12,6 @@
 			>Control de Actividades Deportivas</span
 		>
 	</NavBrand>
-
 	<DarkMode class="text-lg mr-8">
 		<svelte:fragment slot="lightIcon">
 			<SunSolid />

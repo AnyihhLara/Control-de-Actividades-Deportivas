@@ -1,6 +1,7 @@
 <script>
 	import { Button, Modal, Input, NumberInput } from 'flowbite-svelte';
 	import InputWrapper from '../InputWrapper.svelte';
+
 	export let showModifyModal;
 	export let date;
 	export let participants;
@@ -18,7 +19,7 @@
 		<h3 class="mb-4 text-xl font-medium text-gray-900 dark:text-white">
 			Modificar actividad deportiva "{activityToModify.name}"
 		</h3>
-		
+
 		<InputWrapper>
 			<span slot="label-text">Fecha</span>
 			<Input type="date" color="green" required bind:value={date} />

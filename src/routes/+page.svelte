@@ -9,14 +9,14 @@
 	import ModifyModal from '$lib/components/Modal/ModifyModal.svelte';
 
 	const controller = new Controller();
-	controller.addActivity("Fútbol", "2023-10-29", 20);
-	controller.addActivity("Dominó", "2023-11-01", 15);
-	controller.addActivity("Tenis", "2023-11-05", 10);
-	controller.addActivity("Volleyball", "2023-10-29", 20);
-	controller.addActivity("Ajedrez", "2023-11-01", 8);
-	controller.addActivity("Gimnasia", "2023-11-05", 11);
-	controller.addActivity("Natación", "2023-10-29", 18);
-	controller.addActivity("Basketball", "2023-11-01", 20);
+	controller.addActivity('Fútbol', '2023-10-29', 20);
+	controller.addActivity('Dominó', '2023-11-01', 15);
+	controller.addActivity('Tenis', '2023-11-05', 10);
+	controller.addActivity('Volleyball', '2023-10-29', 20);
+	controller.addActivity('Ajedrez', '2023-11-01', 8);
+	controller.addActivity('Gimnasia', '2023-11-05', 11);
+	controller.addActivity('Natación', '2023-10-29', 18);
+	controller.addActivity('Basketball', '2023-11-01', 20);
 
 	let name;
 	let date;
@@ -33,7 +33,7 @@
 			controller.addActivity(name, date, participants);
 			controller.sportsActivities = controller.sportsActivities;
 			showAddModal = false;
-			name = "";
+			name = '';
 			date = null;
 			participants = 0;
 		} catch (e) {
@@ -88,7 +88,7 @@
 	/>
 </div>
 
-<TableWrapper>
+<TableWrapper class="object-bottom">
 	<span slot="h2-text">Actividades Deportivas con mayor cantidad de participantes</span>
 	<Table
 		activities={controller.activitiesHighestNumberOfParticipants()}
@@ -97,7 +97,9 @@
 	/>
 </TableWrapper>
 
-<ErrorModal open={error} on:click={() => (error = null)}>{error}</ErrorModal>
+<ErrorModal open={error} on:click={() => (error = null)} on:close={() => (error = null)}
+	>{error}
+</ErrorModal>
 
 <ModifyModal
 	bind:date
